@@ -1,0 +1,21 @@
+version: "Apple Swift version 3.0 (swiftlang-800.0.46.2 clang-800.0.38)"
+options: "b978a6a6387a9d838bfda80b44db5d17"
+build_time: [527476965, 977405000]
+inputs:
+  "/Users/guoxiaoyu/Desktop/Cognitive-Speech-STT-iOS/Samples/SpeechRecognitionServerExample/Pods/Alamofire/Source/AFError.swift": [527476861, 0]
+  "/Users/guoxiaoyu/Desktop/Cognitive-Speech-STT-iOS/Samples/SpeechRecognitionServerExample/Pods/Alamofire/Source/Alamofire.swift": [527476861, 0]
+  "/Users/guoxiaoyu/Desktop/Cognitive-Speech-STT-iOS/Samples/SpeechRecognitionServerExample/Pods/Alamofire/Source/DispatchQueue+Alamofire.swift": [527476861, 0]
+  "/Users/guoxiaoyu/Desktop/Cognitive-Speech-STT-iOS/Samples/SpeechRecognitionServerExample/Pods/Alamofire/Source/MultipartFormData.swift": [527476861, 0]
+  "/Users/guoxiaoyu/Desktop/Cognitive-Speech-STT-iOS/Samples/SpeechRecognitionServerExample/Pods/Alamofire/Source/NetworkReachabilityManager.swift": [527476861, 0]
+  "/Users/guoxiaoyu/Desktop/Cognitive-Speech-STT-iOS/Samples/SpeechRecognitionServerExample/Pods/Alamofire/Source/Notifications.swift": [527476861, 0]
+  "/Users/guoxiaoyu/Desktop/Cognitive-Speech-STT-iOS/Samples/SpeechRecognitionServerExample/Pods/Alamofire/Source/ParameterEncoding.swift": [527476861, 0]
+  "/Users/guoxiaoyu/Desktop/Cognitive-Speech-STT-iOS/Samples/SpeechRecognitionServerExample/Pods/Alamofire/Source/Request.swift": [527476861, 0]
+  "/Users/guoxiaoyu/Desktop/Cognitive-Speech-STT-iOS/Samples/SpeechRecognitionServerExample/Pods/Alamofire/Source/Response.swift": [527476861, 0]
+  "/Users/guoxiaoyu/Desktop/Cognitive-Speech-STT-iOS/Samples/SpeechRecognitionServerExample/Pods/Alamofire/Source/ResponseSerialization.swift": [527476861, 0]
+  "/Users/guoxiaoyu/Desktop/Cognitive-Speech-STT-iOS/Samples/SpeechRecognitionServerExample/Pods/Alamofire/Source/Result.swift": [527476861, 0]
+  "/Users/guoxiaoyu/Desktop/Cognitive-Speech-STT-iOS/Samples/SpeechRecognitionServerExample/Pods/Alamofire/Source/ServerTrustPolicy.swift": [527476861, 0]
+  "/Users/guoxiaoyu/Desktop/Cognitive-Speech-STT-iOS/Samples/SpeechRecognitionServerExample/Pods/Alamofire/Source/SessionDelegate.swift": [527476861, 0]
+  "/Users/guoxiaoyu/Desktop/Cognitive-Speech-STT-iOS/Samples/SpeechRecognitionServerExample/Pods/Alamofire/Source/SessionManager.swift": [527476861, 0]
+  "/Users/guoxiaoyu/Desktop/Cognitive-Speech-STT-iOS/Samples/SpeechRecognitionServerExample/Pods/Alamofire/Source/TaskDelegate.swift": [527476861, 0]
+  "/Users/guoxiaoyu/Desktop/Cognitive-Speech-STT-iOS/Samples/SpeechRecognitionServerExample/Pods/Alamofire/Source/Timeline.swift": [527476861, 0]
+  "/Users/guoxiaoyu/Desktop/Cognitive-Speech-STT-iOS/Samples/SpeechRecognitionServerExample/Pods/Alamofire/Source/Validation.swift": [527476861, 0]
