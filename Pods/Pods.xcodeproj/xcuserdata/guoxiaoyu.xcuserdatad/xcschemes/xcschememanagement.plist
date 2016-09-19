@@ -14,10 +14,20 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>PulsingHalo.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>3DC1DA7045EFEC800CE4B5FDE432EFCB</key>
+		<key>4A738271BED798834AABA1195740C934</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>79BC612C9251AA0F1EBC619524710FAF</key>
 		<dict>
 			<key>primary</key>
 			<true/>

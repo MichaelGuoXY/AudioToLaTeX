@@ -1,12 +1,15 @@
 PODS:
   - Alamofire (4.0.0)
+  - PulsingHalo (0.2.3)
 
 DEPENDENCIES:
   - Alamofire (~> 4.0)
+  - PulsingHalo
 
 SPEC CHECKSUMS:
   Alamofire: fef59f00388f267e52d9b432aa5d93dc97190f14
+  PulsingHalo: f0fe19699182eb959e4bc333838a2609ef7f7d48
 
-PODFILE CHECKSUM: efce18d21b26f6daa7aba4caaf697fcace9e3d1d
+PODFILE CHECKSUM: a9748d6ffca0e017ff7a4a4ccb895c8229b42e78
 
 COCOAPODS: 1.1.0.rc.2

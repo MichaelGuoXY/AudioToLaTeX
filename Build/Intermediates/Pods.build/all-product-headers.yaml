@@ -4,55 +4,92 @@
   'roots': [
     {
       'type': 'directory',
-      'name': "/Users/guoxiaoyu/Desktop/Cognitive-Speech-STT-iOS/Samples/SpeechRecognitionServerExample/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework/Headers",
+      'name': "/Users/guoxiaoyu/Desktop/AudioToLaTeX/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "Alamofire-Swift.h",
-          'external-contents': "/Users/guoxiaoyu/Desktop/Cognitive-Speech-STT-iOS/Samples/SpeechRecognitionServerExample/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework/Headers/Alamofire-Swift.h"
+          'external-contents': "/Users/guoxiaoyu/Desktop/AudioToLaTeX/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework/Headers/Alamofire-Swift.h"
         },
         {
           'type': 'file',
           'name': "Alamofire-umbrella.h",
-          'external-contents': "/Users/guoxiaoyu/Desktop/Cognitive-Speech-STT-iOS/Samples/SpeechRecognitionServerExample/Pods/Target Support Files/Alamofire/Alamofire-umbrella.h"
+          'external-contents': "/Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/Target Support Files/Alamofire/Alamofire-umbrella.h"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/guoxiaoyu/Desktop/Cognitive-Speech-STT-iOS/Samples/SpeechRecognitionServerExample/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework/Modules",
+      'name': "/Users/guoxiaoyu/Desktop/AudioToLaTeX/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/guoxiaoyu/Desktop/Cognitive-Speech-STT-iOS/Samples/SpeechRecognitionServerExample/Build/Intermediates/Pods.build/Debug-iphoneos/Alamofire.build/module.modulemap"
+          'external-contents': "/Users/guoxiaoyu/Desktop/AudioToLaTeX/Build/Intermediates/Pods.build/Debug-iphoneos/Alamofire.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/guoxiaoyu/Desktop/Cognitive-Speech-STT-iOS/Samples/SpeechRecognitionServerExample/Build/Products/Debug-iphoneos/Pods_SpeechRecognitionServerExample.framework/Headers",
+      'name': "/Users/guoxiaoyu/Desktop/AudioToLaTeX/Build/Products/Debug-iphoneos/Pods_SpeechRecognitionServerExample.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "Pods-SpeechRecognitionServerExample-umbrella.h",
-          'external-contents': "/Users/guoxiaoyu/Desktop/Cognitive-Speech-STT-iOS/Samples/SpeechRecognitionServerExample/Pods/Target Support Files/Pods-SpeechRecognitionServerExample/Pods-SpeechRecognitionServerExample-umbrella.h"
+          'external-contents': "/Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/Target Support Files/Pods-SpeechRecognitionServerExample/Pods-SpeechRecognitionServerExample-umbrella.h"
         },
         {
           'type': 'file',
           'name': "Pods_SpeechRecognitionServerExample-Swift.h",
-          'external-contents': "/Users/guoxiaoyu/Desktop/Cognitive-Speech-STT-iOS/Samples/SpeechRecognitionServerExample/Build/Products/Debug-iphoneos/Pods_SpeechRecognitionServerExample.framework/Headers/Pods_SpeechRecognitionServerExample-Swift.h"
+          'external-contents': "/Users/guoxiaoyu/Desktop/AudioToLaTeX/Build/Products/Debug-iphoneos/Pods_SpeechRecognitionServerExample.framework/Headers/Pods_SpeechRecognitionServerExample-Swift.h"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/guoxiaoyu/Desktop/Cognitive-Speech-STT-iOS/Samples/SpeechRecognitionServerExample/Build/Products/Debug-iphoneos/Pods_SpeechRecognitionServerExample.framework/Modules",
+      'name': "/Users/guoxiaoyu/Desktop/AudioToLaTeX/Build/Products/Debug-iphoneos/Pods_SpeechRecognitionServerExample.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/guoxiaoyu/Desktop/Cognitive-Speech-STT-iOS/Samples/SpeechRecognitionServerExample/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-SpeechRecognitionServerExample.build/module.modulemap"
+          'external-contents': "/Users/guoxiaoyu/Desktop/AudioToLaTeX/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-SpeechRecognitionServerExample.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/guoxiaoyu/Desktop/AudioToLaTeX/Build/Products/Debug-iphoneos/PulsingHalo/PulsingHalo.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "PulsingHalo-Swift.h",
+          'external-contents': "/Users/guoxiaoyu/Desktop/AudioToLaTeX/Build/Products/Debug-iphoneos/PulsingHalo/PulsingHalo.framework/Headers/PulsingHalo-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "PulsingHalo-umbrella.h",
+          'external-contents': "/Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/Target Support Files/PulsingHalo/PulsingHalo-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "PulsingHalo.h",
+          'external-contents': "/Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/PulsingHalo/PulsingHalo/PulsingHalo.h"
+        },
+        {
+          'type': 'file',
+          'name': "PulsingHaloLayer.h",
+          'external-contents': "/Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/PulsingHalo/PulsingHalo/PulsingHaloLayer.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/guoxiaoyu/Desktop/AudioToLaTeX/Build/Products/Debug-iphoneos/PulsingHalo/PulsingHalo.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/guoxiaoyu/Desktop/AudioToLaTeX/Build/Intermediates/Pods.build/Debug-iphoneos/PulsingHalo.build/module.modulemap"
         }
       ]
     }

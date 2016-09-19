@@ -111,15 +111,22 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 #if defined(__has_feature) && __has_feature(modules)
 @import ObjectiveC;
+@import UIKit;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
 #pragma clang diagnostic ignored "-Wduplicate-method-arg"
+@class UIImageView;
 
 SWIFT_CLASS("_TtC30SpeechRecognitionServerExample12LatexService")
 @interface LatexService : NSObject
-+ (void)requestLatexWithPreText:(NSString * _Nonnull)preText;
++ (void)requestLatexWithPreText:(NSString * _Nonnull)preText imageView:(UIImageView * _Nonnull)imageView;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface UIImageView (SWIFT_EXTENSION(SpeechRecognitionServerExample))
+- (void)downloadedFromLink:(NSString * _Nonnull)link contentMode:(UIViewContentMode)mode;
 @end
 
 #pragma clang diagnostic pop

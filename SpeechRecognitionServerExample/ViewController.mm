@@ -33,6 +33,7 @@
 
 #include "precomp.h"
 #include "SpeechRecognitionServerExample-Swift.h"
+#import "PulsingHaloLayer.h"
 
 @interface ViewController (/*private*/)
 
@@ -57,7 +58,11 @@ NSString* ConvertSpeechErrorToString(int errorCode);
 /**
  * The Main App ViewController
  */
-@implementation ViewController
+@implementation ViewController {
+    NSString* oldString;
+    PulsingHaloLayer *halo;
+    bool isListening;
+}
 
 @synthesize buttonGroup;
 @synthesize micRadioButton;
@@ -117,7 +122,7 @@ NSString* ConvertSpeechErrorToString(int errorCode);
     if (index == 1 || index == 4) {
         return SpeechRecognitionMode_LongDictation;
     }
-
+    
     return SpeechRecognitionMode_ShortPhrase;
 }
 
@@ -166,25 +171,56 @@ NSString* ConvertSpeechErrorToString(int errorCode);
             return i;
         }
     }
-
+    
     return 0;
 }
 
 /**
  * Initialization to be done when app starts.
- */ 
+ */
 -(void)viewDidLoad {
     [super viewDidLoad];
-
-    self.buttonGroup = [[NSArray alloc] initWithObjects:micRadioButton, 
-                                                        micDictationRadioButton, 
-                                                        micIntentRadioButton, 
-                                                        dataShortRadioButton, 
-                                                        dataLongRadioButton, 
-                                                        dataShortIntentRadioButton, 
-                                                        nil];
+    
+    self.buttonGroup = [[NSArray alloc] initWithObjects:micRadioButton,
+                        micDictationRadioButton,
+                        micIntentRadioButton,
+                        dataShortRadioButton,
+                        dataLongRadioButton,
+                        dataShortIntentRadioButton,
+                        nil];
     [self showMenu:TRUE];
     textOnScreen = [NSMutableString stringWithCapacity: 1000];
+    [[self speechTextView] setDelegate: self];
+    isListening = FALSE;
+}
+
+-(void)animateButton {
+    self.startButton.transform = CGAffineTransformMakeTranslation(0, -200);
+    [UIView animateWithDuration:1.0 animations:^{
+        self.startButton.transform = CGAffineTransformIdentity;
+    } completion:nil];
+    
+    [self.speechTextView setAlpha:0.0];
+    [UIView animateWithDuration:1.5 animations:^{
+        [self.speechTextView setAlpha:1.0];
+    } completion:nil];
+    //[UIView animateWithDuration:10.0 delay:0 usingSpringWithDamping:0.0 initialSpringVelocity:0.0 options:UIViewAnimationOptionAllowUserInteraction animations:^{
+    //    self.startButton.transform = CGAffineTransformIdentity;
+    //} completion: nil];
+}
+
+-(void) viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [self animateButton];
+}
+
+-(void) textViewDidChange:(UITextView *)textView {
+    if([textView.restorationIdentifier isEqualToString:@"speechTextView"]) {
+        if([self.speechTextView.text isEqualToString:@""]) {
+            self.speechTextView.text = @"Tap the mic button and talk to me";
+        }
+        [LatexService requestLatexWithPreText:textView.text imageView:[self expressionView]];
+    }
 }
 
 /**
@@ -201,19 +237,34 @@ NSString* ConvertSpeechErrorToString(int errorCode);
  * @param sender The event sender
  */
 -(IBAction)StartButton_Click:(id)sender {
+    isListening = TRUE;
+    halo = [PulsingHaloLayer layer];
+    halo.position = CGPointMake(self.startButton.bounds.size.width/2, self.startButton.bounds.size.height/2);
+    halo.radius = 150;
+    halo.backgroundColor = [[UIColor colorWithRed:0.000 green:0.000 blue:0.000 alpha:0.6] CGColor];
+    //[halo setRepeatCount:1];
+    [self.startButton.layer addSublayer:halo];
+    [halo start];
+    if([self.speechTextView.text isEqualToString:@"Tap the mic button and talk to me..."]) {
+        oldString = @"";
+    }
+    else {
+        oldString = [[[self speechTextView] text] stringByAppendingString:@" "];
+    }
+    
     [textOnScreen setString:(@"")];
-    [self setText: textOnScreen];
+    //[self setText: textOnScreen];
     [[self startButton] setEnabled:NO];
     
     [self showMenu:FALSE];
-
+    
     [self logRecognitionStart];
-
+    
     if (self.useMicrophone) {
         if (micClient == nil) {
-            if (!self.wantIntent) { 
+            if (!self.wantIntent) {
                 [self WriteLine:(@"--- Start microphone dictation with Intent detection ----")];
-
+                
                 micClient = [SpeechRecognitionServiceFactory createMicrophoneClient:(self.mode)
                                                                        withLanguage:(self.defaultLocale)
                                                                      withPrimaryKey:(self.subscriptionKey)
@@ -229,7 +280,7 @@ NSString* ConvertSpeechErrorToString(int errorCode);
                                                                                  withProtocol:(self)];
             }
         }
-
+        
         OSStatus status = [micClient startMicAndRecognition];
         if (status) {
             [self WriteLine:[[NSString alloc] initWithFormat:(@"Error starting audio. %@"), ConvertSpeechErrorToString(status)]];
@@ -237,7 +288,7 @@ NSString* ConvertSpeechErrorToString(int errorCode);
     }
     else {
         if (nil == dataClient) {
-            if (!self.wantIntent) { 
+            if (!self.wantIntent) {
                 dataClient = [SpeechRecognitionServiceFactory createDataClient:(self.mode)
                                                                   withLanguage:(self.defaultLocale)
                                                                 withPrimaryKey:(self.subscriptionKey)
@@ -253,7 +304,7 @@ NSString* ConvertSpeechErrorToString(int errorCode);
                                                                             withProtocol:(self)];
             }
         }
-
+        
         [self sendAudioHelper:self.mode == SpeechRecognitionMode_ShortPhrase ? self.shortWaveFile : self.longWaveFile];
     }
 }
@@ -270,11 +321,11 @@ NSString* ConvertSpeechErrorToString(int errorCode);
     } else {
         recoSource = @"long wav file";
     }
-
-    [self WriteLine:[[NSString alloc] initWithFormat:(@"\n--- Start speech recognition using %@ with %@ mode in %@ language ----\n\n"), 
-        recoSource, 
-        self.mode == SpeechRecognitionMode_ShortPhrase ? @"Short" : @"Long",
-        self.defaultLocale]];
+    
+    [self WriteLine:[[NSString alloc] initWithFormat:(@"\n--- Start speech recognition using %@ with %@ mode in %@ language ----\n\n"),
+                     recoSource,
+                     self.mode == SpeechRecognitionMode_ShortPhrase ? @"Short" : @"Long",
+                     self.defaultLocale]];
 }
 
 /**
@@ -286,12 +337,12 @@ NSString* ConvertSpeechErrorToString(int errorCode);
 -(void)sendAudioHelper:(NSString*)filename {
     NSFileHandle* fileHandle = nil;
     @try {
-
+        
         NSBundle* mainResouceArea = [NSBundle mainBundle];
         NSString* filePathAndName = [mainResouceArea pathForResource:(filename)
                                                               ofType:(@"wav")];
         NSURL* fileURL = [[NSURL alloc] initFileURLWithPath:(filePathAndName)];
-
+        
         fileHandle = [NSFileHandle fileHandleForReadingFromURL:(fileURL)
                                                          error:(nil)];
         
@@ -327,15 +378,22 @@ NSString* ConvertSpeechErrorToString(int errorCode);
  */
 -(void)onFinalResponseReceived:(RecognitionResult*)response {
     bool isFinalDicationMessage = self.mode == SpeechRecognitionMode_LongDictation &&
-                                                (response.RecognitionStatus == RecognitionStatus_EndOfDictation ||
-                                                 response.RecognitionStatus == RecognitionStatus_DictationEndSilenceTimeout);
+    (response.RecognitionStatus == RecognitionStatus_EndOfDictation ||
+     response.RecognitionStatus == RecognitionStatus_DictationEndSilenceTimeout);
     if (nil != micClient && self.useMicrophone && ((self.mode == SpeechRecognitionMode_ShortPhrase) || isFinalDicationMessage)) {
         // we got the final result, so it we can end the mic reco.  No need to do this
         // for dataReco, since we already called endAudio on it as soon as we were done
         // sending all the data.
+        //[halo removeFromSuperlayer];
+        //self.startButton.layer.sublayers = nil;
+        //[halo removeAllAnimations];
+        //[halo setBackgroundColor:[[UIColor clearColor] CGColor]];
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [halo removeFromSuperlayer];
+        });
         [micClient endMicAndRecognition];
     }
-
+    
     if ((self.mode == SpeechRecognitionMode_ShortPhrase) || isFinalDicationMessage) {
         dispatch_async(dispatch_get_main_queue(), ^{
             [[self startButton] setEnabled:YES];
@@ -347,19 +405,19 @@ NSString* ConvertSpeechErrorToString(int errorCode);
             [self WriteLine:(@"********* Final n-BEST Results *********")];
             for (int i = 0; i < [response.RecognizedPhrase count]; i++) {
                 RecognizedPhrase* phrase = response.RecognizedPhrase[i];
-                [self WriteLine:[[NSString alloc] initWithFormat:(@"[%d] Confidence=%@ Text=\"%@\""), 
-                                  i,
-                                  ConvertSpeechRecoConfidenceEnumToString(phrase.Confidence),
-                                  phrase.DisplayText]];
+                [self WriteLine:[[NSString alloc] initWithFormat:(@"[%d] Confidence=%@ Text=\"%@\""),
+                                 i,
+                                 ConvertSpeechRecoConfidenceEnumToString(phrase.Confidence),
+                                 phrase.DisplayText]];
             }
-
+            
             [self WriteLine:(@"")];
         });
     }
 }
 
 /**
- * Called when a final response is received and its intent is parsed 
+ * Called when a final response is received and its intent is parsed
  * @param result The intent result.
  */
 -(void)onIntentReceived:(IntentResult*) result {
@@ -404,7 +462,7 @@ NSString* ConvertSpeechErrorToString(int errorCode);
     if (!recording) {
         [micClient endMicAndRecognition];
     }
-
+    
     dispatch_async(dispatch_get_main_queue(), ^{
         if (!recording) {
             [[self startButton] setEnabled:YES];
@@ -424,8 +482,28 @@ NSString* ConvertSpeechErrorToString(int errorCode);
 }
 
 -(void)WriteRecognizedSpeech:(NSString*)text {
-    [self setText:text];
-    [LatexService requestLatexWithPreText:text];
+    NSString* string = [oldString stringByAppendingString:text];
+    if([string containsString:@"reset"] || [string containsString:@"clear"]) {
+        isListening = FALSE;
+        string = @"";
+        oldString = @"";
+        [micClient endMicAndRecognition];
+        [NSTimer scheduledTimerWithTimeInterval:0.01
+                                         target:self
+                                       selector:@selector(clearImage)
+                                       userInfo:nil
+                                        repeats:NO];
+    }
+    
+    [self setText:string];
+    
+    if(isListening) {
+        [LatexService requestLatexWithPreText:string imageView:self.expressionView];
+    }
+}
+
+-(void)clearImage {
+    self.expressionView.image = nil;
 }
 
 /**
@@ -438,17 +516,17 @@ NSString* ConvertSpeechErrorToString(int errorCode);
         UNIVERSAL_BUTTON* buttonSel = (UNIVERSAL_BUTTON*)self.buttonGroup[i];
         UNIVERSAL_BUTTON_SETCHECKED(buttonSel, (index == i) ? TRUE : FALSE);
     }
-
+    
     if (micClient != nil) {
         [micClient finalize];
         micClient = nil;
     }
-
+    
     if (dataClient != nil) {
         [dataClient finalize];
         dataClient = nil;
     }
-
+    
     [self showMenu:FALSE];
 }
 
@@ -477,7 +555,7 @@ NSString* ConvertSpeechErrorToString(int errorCode) {
         case SpeechClientStatus_MicrophoneStatusUnknown:return @"SpeechClientStatus_MicrophoneStatusUnknown";
         case SpeechClientStatus_InvalidArgument:        return @"SpeechClientStatus_InvalidArgument";
     }
-
+    
     return [[NSString alloc] initWithFormat:@"Unknown error: %d\n", errorCode];
 }
 
@@ -490,13 +568,13 @@ NSString* ConvertSpeechRecoConfidenceEnumToString(Confidence confidence) {
     switch (confidence) {
         case SpeechRecoConfidence_None:
             return @"None";
-
+            
         case SpeechRecoConfidence_Low:
             return @"Low";
-
+            
         case SpeechRecoConfidence_Normal:
             return @"Normal";
-
+            
         case SpeechRecoConfidence_High:
             return @"High";
     }
@@ -527,6 +605,10 @@ NSString* ConvertSpeechRecoConfidenceEnumToString(Confidence confidence) {
     //UNIVERSAL_TEXTVIEW_SETTEXT(self.quoteText, text);
     //[self.quoteText scrollRangeToVisible:NSMakeRange([text length] - 1, 1)];
     UNIVERSAL_TEXTVIEW_SETTEXT(self.speechTextView, text);
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    [self.view endEditing:YES];
 }
 
 @end

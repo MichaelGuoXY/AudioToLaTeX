@@ -21,7 +21,7 @@ ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEAL
 /**
 * The Main App
 */
-@interface ViewController : UNIVERSAL_VIEWCONTROLLER <SpeechRecognitionProtocol>
+@interface ViewController : UNIVERSAL_VIEWCONTROLLER <SpeechRecognitionProtocol, UITextViewDelegate>
 {
     NSMutableString* textOnScreen;
     DataRecognitionClient* dataClient;

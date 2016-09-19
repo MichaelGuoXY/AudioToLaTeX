@@ -4,4 +4,5 @@ use_frameworks!
 
 target 'SpeechRecognitionServerExample' do
     pod 'Alamofire', '~> 4.0'
+    pod "PulsingHalo"
 end

@@ -18,40 +18,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="UKd-xa-6o4">
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" restorationIdentifier="speechTextView" text="Tap the mic button and talk to me..." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="UKd-xa-6o4">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="300" id="YsE-vC-Iln"/>
+                                    <constraint firstAttribute="height" constant="100" id="YsE-vC-Iln"/>
                                 </constraints>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.54141019570707072" green="0.54141019570707072" blue="0.54141019570707072" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wa8-Uo-PBr">
-                                <color key="backgroundColor" red="0.66666666666666663" green="0.66666666666666663" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wa8-Uo-PBr">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="60" id="3aV-fS-hUq"/>
-                                    <constraint firstAttribute="height" constant="60" id="CmK-Pq-PhK"/>
+                                    <constraint firstAttribute="width" constant="70" id="3aV-fS-hUq"/>
+                                    <constraint firstAttribute="height" constant="70" id="CmK-Pq-PhK"/>
                                 </constraints>
-                                <state key="normal" title="Start">
-                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="recording">
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="StartButton_Click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="01N-Fz-JMF"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FhO-EF-n8U"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FhO-EF-n8U">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="bcH-Ao-4CF"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="FhO-EF-n8U" secondAttribute="bottom" constant="20" id="Cbf-rP-6kS"/>
-                            <constraint firstItem="FhO-EF-n8U" firstAttribute="top" secondItem="Wa8-Uo-PBr" secondAttribute="bottom" constant="27" id="KuM-FH-f5f"/>
-                            <constraint firstItem="Wa8-Uo-PBr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="ORX-bO-2HC"/>
                             <constraint firstAttribute="trailing" secondItem="UKd-xa-6o4" secondAttribute="trailing" constant="20" id="Vre-Uj-6TH"/>
                             <constraint firstItem="FhO-EF-n8U" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="VzA-hM-nPF"/>
-                            <constraint firstItem="Wa8-Uo-PBr" firstAttribute="top" secondItem="UKd-xa-6o4" secondAttribute="bottom" constant="44" id="Zh8-0c-jaL"/>
+                            <constraint firstItem="Wa8-Uo-PBr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="YTU-og-DOr"/>
                             <constraint firstAttribute="trailing" secondItem="FhO-EF-n8U" secondAttribute="trailing" constant="20" id="cnR-Sm-DgR"/>
                             <constraint firstItem="UKd-xa-6o4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="eS0-T7-anR"/>
+                            <constraint firstItem="Wa8-Uo-PBr" firstAttribute="top" secondItem="FhO-EF-n8U" secondAttribute="bottom" constant="150" id="kaW-wU-Jqp"/>
+                            <constraint firstItem="FhO-EF-n8U" firstAttribute="top" secondItem="UKd-xa-6o4" secondAttribute="bottom" constant="10" id="oXF-Vi-9Nz"/>
                             <constraint firstItem="UKd-xa-6o4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="yrk-Bx-Smf"/>
                         </constraints>
                     </view>
@@ -63,9 +64,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="130" y="274"/>
+            <point key="canvasLocation" x="129.5" y="273.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="recording" width="512" height="512"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

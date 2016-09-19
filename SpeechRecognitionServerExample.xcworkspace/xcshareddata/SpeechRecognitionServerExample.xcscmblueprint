@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "010A9B714EDB1E446C3C8F27A15FC0EFFFA311FA",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "010A9B714EDB1E446C3C8F27A15FC0EFFFA311FA" : 9223372036854775807,
+    "1C7A965FE485A5BA0145B9146B8C9E9F601019E2" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "7C59791B-CA51-4679-8235-CC62B41F8339",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "010A9B714EDB1E446C3C8F27A15FC0EFFFA311FA" : "AudioToLaTeX\/",
+    "1C7A965FE485A5BA0145B9146B8C9E9F601019E2" : ".."
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "SpeechRecognitionServerExample",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "SpeechRecognitionServerExample.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/MichaelGuoXY\/FormulaMaster.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "010A9B714EDB1E446C3C8F27A15FC0EFFFA311FA"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Microsoft\/Cognitive-Speech-STT-iOS.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "1C7A965FE485A5BA0145B9146B8C9E9F601019E2"
+    }
+  ]
+}

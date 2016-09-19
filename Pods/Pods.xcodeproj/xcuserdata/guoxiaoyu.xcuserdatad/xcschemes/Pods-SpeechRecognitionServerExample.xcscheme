@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "3DC1DA7045EFEC800CE4B5FDE432EFCB"
+               BlueprintIdentifier = "79BC612C9251AA0F1EBC619524710FAF"
                BuildableName = "Pods_SpeechRecognitionServerExample.framework"
                BlueprintName = "Pods-SpeechRecognitionServerExample"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "3DC1DA7045EFEC800CE4B5FDE432EFCB"
+            BlueprintIdentifier = "79BC612C9251AA0F1EBC619524710FAF"
             BuildableName = "Pods_SpeechRecognitionServerExample.framework"
             BlueprintName = "Pods-SpeechRecognitionServerExample"
             ReferencedContainer = "container:Pods.xcodeproj">

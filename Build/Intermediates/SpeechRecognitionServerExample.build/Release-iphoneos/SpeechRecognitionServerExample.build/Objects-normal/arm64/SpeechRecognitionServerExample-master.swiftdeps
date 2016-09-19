@@ -1,5 +1,0 @@
-version: "Apple Swift version 3.0 (swiftlang-800.0.46.2 clang-800.0.38)"
-options: "c93ca2d0496eabfc19a0f308aa6d5ed9"
-build_time: [527478055, 104876000]
-inputs:
-  "/Users/guoxiaoyu/Desktop/Cognitive-Speech-STT-iOS/Samples/SpeechRecognitionServerExample/SpeechRecognitionServerExample/LatexService.swift": !dirty [527478024, 0]

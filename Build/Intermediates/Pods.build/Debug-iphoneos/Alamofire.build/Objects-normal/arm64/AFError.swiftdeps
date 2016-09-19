@@ -39,18 +39,18 @@ provides-member:
 - ["OO9Alamofire7AFError31ResponseValidationFailureReason", "localizedDescription"]
 provides-dynamic-lookup:
 depends-top-level:
-- "URLConvertible"
-- !private "StringLiteralType"
-- "String"
-- !private "BooleanLiteralType"
 - "Bool"
+- "LocalizedError"
+- !private "StringLiteralType"
+- "URL"
+- !private "BooleanLiteralType"
+- "AFError"
+- !private "+"
+- !private "UnicodeScalarType"
+- "URLConvertible"
 - "Int"
 - "Error"
-- "AFError"
-- "URL"
-- !private "UnicodeScalarType"
-- "LocalizedError"
-- !private "+"
+- "String"
 depends-member:
 - ["O9Alamofire7AFError", "Bool"]
 - ["O9Alamofire7AFError", "Error"]
@@ -397,8 +397,8 @@ depends-nominal:
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Swift.swiftmodule"
-- "/Users/guoxiaoyu/Desktop/Cognitive-Speech-STT-iOS/Samples/SpeechRecognitionServerExample/Pods/Target Support Files/Alamofire/Alamofire-umbrella.h"
-- "/Users/guoxiaoyu/Desktop/Cognitive-Speech-STT-iOS/Samples/SpeechRecognitionServerExample/Build/Intermediates/Pods.build/Debug-iphoneos/Alamofire.build/unextended-module.modulemap"
+- "/Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/Target Support Files/Alamofire/Alamofire-umbrella.h"
+- "/Users/guoxiaoyu/Desktop/AudioToLaTeX/Build/Intermediates/Pods.build/Debug-iphoneos/Alamofire.build/unextended-module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Foundation.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/arm64/Darwin.swiftmodule"
