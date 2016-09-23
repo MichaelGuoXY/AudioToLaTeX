@@ -1,0 +1,21 @@
+version: "Apple Swift version 3.0 (swiftlang-800.0.46.2 clang-800.0.38)"
+options: "038e3f536b97f7e7d01cb6f40a790d03"
+build_time: [527794494, 919244000]
+inputs:
+  "/Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/Alamofire/Source/AFError.swift": [527794410, 0]
+  "/Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/Alamofire/Source/Alamofire.swift": [527794410, 0]
+  "/Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/Alamofire/Source/DispatchQueue+Alamofire.swift": [527794410, 0]
+  "/Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/Alamofire/Source/MultipartFormData.swift": [527794410, 0]
+  "/Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/Alamofire/Source/NetworkReachabilityManager.swift": [527794410, 0]
+  "/Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/Alamofire/Source/Notifications.swift": [527794410, 0]
+  "/Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/Alamofire/Source/ParameterEncoding.swift": [527794410, 0]
+  "/Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/Alamofire/Source/Request.swift": [527794410, 0]
+  "/Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/Alamofire/Source/Response.swift": [527794410, 0]
+  "/Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/Alamofire/Source/ResponseSerialization.swift": [527794410, 0]
+  "/Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/Alamofire/Source/Result.swift": [527794410, 0]
+  "/Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/Alamofire/Source/ServerTrustPolicy.swift": [527794410, 0]
+  "/Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/Alamofire/Source/SessionDelegate.swift": [527794410, 0]
+  "/Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/Alamofire/Source/SessionManager.swift": [527794410, 0]
+  "/Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/Alamofire/Source/TaskDelegate.swift": [527794410, 0]
+  "/Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/Alamofire/Source/Timeline.swift": [527794410, 0]
+  "/Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/Alamofire/Source/Validation.swift": [527794410, 0]

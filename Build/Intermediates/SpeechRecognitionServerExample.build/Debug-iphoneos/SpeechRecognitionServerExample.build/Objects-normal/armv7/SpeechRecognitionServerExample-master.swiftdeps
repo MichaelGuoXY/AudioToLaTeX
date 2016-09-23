@@ -1,5 +1,6 @@
 version: "Apple Swift version 3.0 (swiftlang-800.0.46.2 clang-800.0.38)"
-options: "515a377a47cd5844737ad2b360500264"
-build_time: [527528318, 266511000]
+options: "7255486c6851ed62862218ed0e50b973"
+build_time: [527926512, 149464000]
 inputs:
-  "/Users/guoxiaoyu/Desktop/AudioToLaTeX/SpeechRecognitionServerExample/LatexService.swift": [527496537, 0]
+  "/Users/guoxiaoyu/Desktop/AudioToLaTeX/SpeechRecognitionServerExample/LatexService.swift": [527804305, 0]
+  "/Users/guoxiaoyu/Desktop/AudioToLaTeX/SpeechRecognitionServerExample/SignInViewController.swift": [527804142, 0]

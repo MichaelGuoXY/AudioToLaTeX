@@ -8,8 +8,18 @@
 
 import Foundation
 import Alamofire
+import Firebase
+
 
 @objc class LatexService : NSObject{
+    
+    static private var uniqueCode : String!
+    static var rootRef : FIRDatabaseReference!
+    
+    static func enterUniqueCode(code: String) {
+        self.uniqueCode = code
+        rootRef = FIRDatabase.database().reference(fromURL: "https://speechtolatex.firebaseio.com/users/")
+    }
     
     static func requestLatex(preText: String, imageView: UIImageView) {
         print("pretext = " + preText)
@@ -17,9 +27,9 @@ import Alamofire
         let parameters: [String: String] = [
             "english" : preText
         ]
-        Alamofire.request("http://10.144.6.201:5000/", method: .post, parameters: parameters).responseJSON{ response in
+        Alamofire.request("http://192.168.1.101:5000/", method: .post, parameters: parameters).responseJSON{ response in
             
-            //print(response.result.value)
+            print(response.result.value)
             if let result = response.result.value {
                 let json = result as! NSDictionary
                 let latex = json["latex"] as! String
@@ -29,6 +39,16 @@ import Alamofire
                 print("url = " + url)
                 imageView.downloadedFrom(link: url)
                 //downloadImage(imageView: imageView, url: URL(string: url))
+                
+                // upload data onto firebase
+                let dic : [String : String] = [
+                    "latex" : latex,
+                    "speech" : preText,
+                    "url" : url
+                ]
+                
+                rootRef.child(uniqueCode).updateChildValues(dic)
+                
             }
             
         }

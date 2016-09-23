@@ -1,5 +1,0 @@
-version: "Apple Swift version 3.0 (swiftlang-800.0.46.2 clang-800.0.38)"
-options: "c7da5dceb8fe4f68d4e08ad7efe32665"
-build_time: [527496109, 654375000]
-inputs:
-  "/Users/guoxiaoyu/Desktop/Cognitive-Speech-STT-iOS/Samples/SpeechRecognitionServerExample/Pods/Pulsator/Pulsator/Pulsator.swift": !dirty [527495541, 0]

@@ -62,6 +62,7 @@ NSString* ConvertSpeechErrorToString(int errorCode);
     NSString* oldString;
     PulsingHaloLayer *halo;
     bool isListening;
+    NSString* uniqueCode;
 }
 
 @synthesize buttonGroup;
@@ -192,6 +193,9 @@ NSString* ConvertSpeechErrorToString(int errorCode);
     textOnScreen = [NSMutableString stringWithCapacity: 1000];
     [[self speechTextView] setDelegate: self];
     isListening = FALSE;
+    NSUserDefaults* userDefault = [NSUserDefaults standardUserDefaults];
+    uniqueCode = [userDefault stringForKey:@"uniqueCode"];
+    [LatexService enterUniqueCodeWithCode:uniqueCode];
 }
 
 -(void)animateButton {

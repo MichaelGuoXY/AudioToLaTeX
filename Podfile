@@ -5,4 +5,8 @@ use_frameworks!
 target 'SpeechRecognitionServerExample' do
     pod 'Alamofire', '~> 4.0'
     pod "PulsingHalo"
+    pod 'Firebase/Core'
+    pod 'Firebase/Auth'
+	pod 'Firebase/Storage'
+	pod 'Firebase/Database'
 end

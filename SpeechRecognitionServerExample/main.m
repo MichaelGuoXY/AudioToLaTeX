@@ -18,6 +18,7 @@ ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEAL
 **/
 
 #include "precomp.h"
+@import Firebase;
 
 int main(int argc, UNIVERSAL_APP_ARGV argv[]) {
     @autoreleasepool {

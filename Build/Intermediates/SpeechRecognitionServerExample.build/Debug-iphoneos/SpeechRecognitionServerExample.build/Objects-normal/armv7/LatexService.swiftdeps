@@ -8,53 +8,65 @@ provides-member:
 - ["CSo11UIImageView", ""]
 - ["CSo11UIImageView", "downloadedFrom"]
 provides-dynamic-lookup:
-- "requestLatex"
+- "rootRef"
 - "downloadedFrom"
+- "requestLatex"
+- "enterUniqueCode"
 depends-top-level:
-- "AssignmentPrecedence"
-- !private "NSDictionary"
-- !private "CastingPrecedence"
-- !private "URLRequest"
-- !private "+"
-- !private "print"
-- !private "HTTPURLResponse"
-- !private "UIImage"
-- !private "=="
-- !private "Void"
-- "NSObject"
 - !private "DispatchQueue"
-- "UIViewContentMode"
-- !private "URL"
-- "LatexService"
-- !private "Dictionary"
-- !private "Alamofire"
 - !private "StringLiteralType"
-- !private "URLSession"
 - "String"
+- !private "Dictionary"
+- !private "+"
+- !private "NSDictionary"
+- !private "Alamofire"
+- !private "Void"
 - "UIImageView"
+- "FIRDatabaseReference"
+- !private "URL"
+- !private "UIImage"
+- "LatexService"
+- "UIViewContentMode"
+- !private "HTTPURLResponse"
+- !private "URLRequest"
+- !private "FIRDatabase"
+- "AssignmentPrecedence"
+- !private "=="
+- !private "CastingPrecedence"
+- "NSObject"
+- !private "print"
+- !private "URLSession"
 depends-member:
 - !private ["Ps9AnyObject", "Alamofire"]
 - !private ["Ps9AnyObject", "DispatchQueue"]
+- !private ["Ps9AnyObject", "FIRDatabase"]
 - !private ["Ps9AnyObject", "UIImage"]
 - !private ["Ps9AnyObject", "URL"]
 - !private ["Ps9AnyObject", "URLRequest"]
 - !private ["Ps9AnyObject", "URLSession"]
 - !private ["Ps9AnyObject", "async"]
+- !private ["Ps9AnyObject", "child"]
 - !private ["Ps9AnyObject", "contentMode"]
 - !private ["Ps9AnyObject", "dataTask"]
+- !private ["Ps9AnyObject", "database"]
 - ["Ps9AnyObject", "downloadedFrom"]
+- ["Ps9AnyObject", "enterUniqueCode"]
 - !private ["Ps9AnyObject", "hasPrefix"]
 - !private ["Ps9AnyObject", "image"]
 - !private ["Ps9AnyObject", "init"]
 - !private ["Ps9AnyObject", "main"]
 - !private ["Ps9AnyObject", "mimeType"]
 - !private ["Ps9AnyObject", "print"]
+- !private ["Ps9AnyObject", "reference"]
 - ["Ps9AnyObject", "requestLatex"]
 - !private ["Ps9AnyObject", "responseJSON"]
 - !private ["Ps9AnyObject", "resume"]
+- ["Ps9AnyObject", "rootRef"]
 - !private ["Ps9AnyObject", "shared"]
 - !private ["Ps9AnyObject", "statusCode"]
 - !private ["Ps9AnyObject", "subscript"]
+- ["Ps9AnyObject", "uniqueCode"]
+- !private ["Ps9AnyObject", "updateChildValues"]
 - ["Ps9AnyObject", ""]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["Sb", "deinit"]
@@ -68,6 +80,7 @@ depends-member:
 - !private ["PSo15CALayerDelegate", "image"]
 - !private ["Ps7CVarArg", "Alamofire"]
 - !private ["Ps7CVarArg", "DispatchQueue"]
+- !private ["Ps7CVarArg", "FIRDatabase"]
 - !private ["Ps7CVarArg", "Key"]
 - !private ["Ps7CVarArg", "UIImage"]
 - !private ["Ps7CVarArg", "URL"]
@@ -75,20 +88,27 @@ depends-member:
 - !private ["Ps7CVarArg", "URLSession"]
 - !private ["Ps7CVarArg", "Value"]
 - !private ["Ps7CVarArg", "async"]
+- !private ["Ps7CVarArg", "child"]
 - !private ["Ps7CVarArg", "contentMode"]
 - !private ["Ps7CVarArg", "dataTask"]
+- !private ["Ps7CVarArg", "database"]
 - ["Ps7CVarArg", "downloadedFrom"]
+- ["Ps7CVarArg", "enterUniqueCode"]
 - !private ["Ps7CVarArg", "hasPrefix"]
 - !private ["Ps7CVarArg", "image"]
 - !private ["Ps7CVarArg", "init"]
 - !private ["Ps7CVarArg", "main"]
 - !private ["Ps7CVarArg", "mimeType"]
 - !private ["Ps7CVarArg", "print"]
+- !private ["Ps7CVarArg", "reference"]
 - ["Ps7CVarArg", "requestLatex"]
 - !private ["Ps7CVarArg", "resume"]
+- ["Ps7CVarArg", "rootRef"]
 - !private ["Ps7CVarArg", "shared"]
 - !private ["Ps7CVarArg", "statusCode"]
 - !private ["Ps7CVarArg", "subscript"]
+- ["Ps7CVarArg", "uniqueCode"]
+- !private ["Ps7CVarArg", "updateChildValues"]
 - ["Ps7CVarArg", ""]
 - !private ["Ps10Collection", "Key"]
 - !private ["Ps10Collection", "Value"]
@@ -96,6 +116,7 @@ depends-member:
 - !private ["Ps10Comparable", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "Alamofire"]
 - !private ["Ps28CustomDebugStringConvertible", "DispatchQueue"]
+- !private ["Ps28CustomDebugStringConvertible", "FIRDatabase"]
 - !private ["Ps28CustomDebugStringConvertible", "Key"]
 - !private ["Ps28CustomDebugStringConvertible", "UIImage"]
 - !private ["Ps28CustomDebugStringConvertible", "URL"]
@@ -103,23 +124,30 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "URLSession"]
 - !private ["Ps28CustomDebugStringConvertible", "Value"]
 - !private ["Ps28CustomDebugStringConvertible", "async"]
+- !private ["Ps28CustomDebugStringConvertible", "child"]
 - !private ["Ps28CustomDebugStringConvertible", "contentMode"]
 - !private ["Ps28CustomDebugStringConvertible", "dataTask"]
+- !private ["Ps28CustomDebugStringConvertible", "database"]
 - ["Ps28CustomDebugStringConvertible", "downloadedFrom"]
+- ["Ps28CustomDebugStringConvertible", "enterUniqueCode"]
 - !private ["Ps28CustomDebugStringConvertible", "hasPrefix"]
 - !private ["Ps28CustomDebugStringConvertible", "image"]
 - !private ["Ps28CustomDebugStringConvertible", "init"]
 - !private ["Ps28CustomDebugStringConvertible", "main"]
 - !private ["Ps28CustomDebugStringConvertible", "mimeType"]
 - !private ["Ps28CustomDebugStringConvertible", "print"]
+- !private ["Ps28CustomDebugStringConvertible", "reference"]
 - ["Ps28CustomDebugStringConvertible", "requestLatex"]
 - !private ["Ps28CustomDebugStringConvertible", "responseJSON"]
 - !private ["Ps28CustomDebugStringConvertible", "result"]
 - !private ["Ps28CustomDebugStringConvertible", "resume"]
+- ["Ps28CustomDebugStringConvertible", "rootRef"]
 - !private ["Ps28CustomDebugStringConvertible", "shared"]
 - ["Ps28CustomDebugStringConvertible", "some"]
 - !private ["Ps28CustomDebugStringConvertible", "statusCode"]
 - !private ["Ps28CustomDebugStringConvertible", "subscript"]
+- ["Ps28CustomDebugStringConvertible", "uniqueCode"]
+- !private ["Ps28CustomDebugStringConvertible", "updateChildValues"]
 - !private ["Ps28CustomDebugStringConvertible", "value"]
 - ["Ps28CustomDebugStringConvertible", ""]
 - !private ["Ps29CustomPlaygroundQuickLookable", "_getBuiltinLogicValue"]
@@ -134,6 +162,7 @@ depends-member:
 - !private ["Ps17CustomReflectable", "subscript"]
 - !private ["Ps23CustomStringConvertible", "Alamofire"]
 - !private ["Ps23CustomStringConvertible", "DispatchQueue"]
+- !private ["Ps23CustomStringConvertible", "FIRDatabase"]
 - !private ["Ps23CustomStringConvertible", "Key"]
 - !private ["Ps23CustomStringConvertible", "UIImage"]
 - !private ["Ps23CustomStringConvertible", "URL"]
@@ -142,22 +171,29 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "Value"]
 - !private ["Ps23CustomStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps23CustomStringConvertible", "async"]
+- !private ["Ps23CustomStringConvertible", "child"]
 - !private ["Ps23CustomStringConvertible", "contentMode"]
 - !private ["Ps23CustomStringConvertible", "dataTask"]
+- !private ["Ps23CustomStringConvertible", "database"]
 - ["Ps23CustomStringConvertible", "downloadedFrom"]
+- ["Ps23CustomStringConvertible", "enterUniqueCode"]
 - !private ["Ps23CustomStringConvertible", "hasPrefix"]
 - !private ["Ps23CustomStringConvertible", "image"]
 - !private ["Ps23CustomStringConvertible", "init"]
 - !private ["Ps23CustomStringConvertible", "main"]
 - !private ["Ps23CustomStringConvertible", "mimeType"]
 - !private ["Ps23CustomStringConvertible", "print"]
+- !private ["Ps23CustomStringConvertible", "reference"]
 - ["Ps23CustomStringConvertible", "requestLatex"]
 - !private ["Ps23CustomStringConvertible", "responseJSON"]
 - !private ["Ps23CustomStringConvertible", "result"]
 - !private ["Ps23CustomStringConvertible", "resume"]
+- ["Ps23CustomStringConvertible", "rootRef"]
 - !private ["Ps23CustomStringConvertible", "shared"]
 - !private ["Ps23CustomStringConvertible", "statusCode"]
 - !private ["Ps23CustomStringConvertible", "subscript"]
+- ["Ps23CustomStringConvertible", "uniqueCode"]
+- !private ["Ps23CustomStringConvertible", "updateChildValues"]
 - !private ["Ps23CustomStringConvertible", "value"]
 - ["Ps23CustomStringConvertible", ""]
 - !private ["V10Foundation4Data", "deinit"]
@@ -175,6 +211,7 @@ depends-member:
 - !private ["CSo13DispatchQueue", "main"]
 - !private ["Ps9Equatable", "Alamofire"]
 - !private ["Ps9Equatable", "DispatchQueue"]
+- !private ["Ps9Equatable", "FIRDatabase"]
 - !private ["Ps9Equatable", "UIImage"]
 - !private ["Ps9Equatable", "URL"]
 - !private ["Ps9Equatable", "URLRequest"]
@@ -182,9 +219,12 @@ depends-member:
 - !private ["Ps9Equatable", "_getBuiltinLogicValue"]
 - !private ["Ps9Equatable", "async"]
 - !private ["Ps9Equatable", "center"]
+- !private ["Ps9Equatable", "child"]
 - !private ["Ps9Equatable", "contentMode"]
 - !private ["Ps9Equatable", "dataTask"]
+- !private ["Ps9Equatable", "database"]
 - ["Ps9Equatable", "downloadedFrom"]
+- ["Ps9Equatable", "enterUniqueCode"]
 - !private ["Ps9Equatable", "hasPrefix"]
 - !private ["Ps9Equatable", "image"]
 - !private ["Ps9Equatable", "init"]
@@ -192,12 +232,16 @@ depends-member:
 - !private ["Ps9Equatable", "mimeType"]
 - !private ["Ps9Equatable", "post"]
 - !private ["Ps9Equatable", "print"]
+- !private ["Ps9Equatable", "reference"]
 - ["Ps9Equatable", "requestLatex"]
 - !private ["Ps9Equatable", "resume"]
+- ["Ps9Equatable", "rootRef"]
 - !private ["Ps9Equatable", "scaleAspectFit"]
 - !private ["Ps9Equatable", "shared"]
 - !private ["Ps9Equatable", "statusCode"]
 - !private ["Ps9Equatable", "subscript"]
+- ["Ps9Equatable", "uniqueCode"]
+- !private ["Ps9Equatable", "updateChildValues"]
 - ["Ps9Equatable", ""]
 - !private ["Ps5Error", "deinit"]
 - !private ["Ps27ExpressibleByBooleanLiteral", "_getBuiltinLogicValue"]
@@ -213,12 +257,21 @@ depends-member:
 - !private ["Ps26ExpressibleByStringLiteral", "init"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "hasPrefix"]
 - !private ["Ps33ExpressibleByUnicodeScalarLiteral", "init"]
+- !private ["CSo11FIRDatabase", "database"]
+- ["CSo11FIRDatabase", "deinit"]
+- !private ["CSo11FIRDatabase", "reference"]
+- !private ["CSo16FIRDatabaseQuery", "child"]
+- !private ["CSo16FIRDatabaseQuery", "updateChildValues"]
+- !private ["CSo20FIRDatabaseReference", "child"]
+- ["CSo20FIRDatabaseReference", "deinit"]
+- !private ["CSo20FIRDatabaseReference", "updateChildValues"]
 - ["O9Alamofire10HTTPMethod", "deinit"]
 - !private ["O9Alamofire10HTTPMethod", "post"]
 - !private ["CSo15HTTPURLResponse", "deinit"]
 - !private ["CSo15HTTPURLResponse", "statusCode"]
 - !private ["Ps8Hashable", "Alamofire"]
 - !private ["Ps8Hashable", "DispatchQueue"]
+- !private ["Ps8Hashable", "FIRDatabase"]
 - !private ["Ps8Hashable", "UIImage"]
 - !private ["Ps8Hashable", "URL"]
 - !private ["Ps8Hashable", "URLRequest"]
@@ -226,9 +279,12 @@ depends-member:
 - !private ["Ps8Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps8Hashable", "async"]
 - !private ["Ps8Hashable", "center"]
+- !private ["Ps8Hashable", "child"]
 - !private ["Ps8Hashable", "contentMode"]
 - !private ["Ps8Hashable", "dataTask"]
+- !private ["Ps8Hashable", "database"]
 - ["Ps8Hashable", "downloadedFrom"]
+- ["Ps8Hashable", "enterUniqueCode"]
 - !private ["Ps8Hashable", "hasPrefix"]
 - !private ["Ps8Hashable", "image"]
 - !private ["Ps8Hashable", "init"]
@@ -236,26 +292,36 @@ depends-member:
 - !private ["Ps8Hashable", "mimeType"]
 - !private ["Ps8Hashable", "post"]
 - !private ["Ps8Hashable", "print"]
+- !private ["Ps8Hashable", "reference"]
 - ["Ps8Hashable", "requestLatex"]
 - !private ["Ps8Hashable", "resume"]
+- ["Ps8Hashable", "rootRef"]
 - !private ["Ps8Hashable", "scaleAspectFit"]
 - !private ["Ps8Hashable", "shared"]
 - !private ["Ps8Hashable", "statusCode"]
 - !private ["Ps8Hashable", "subscript"]
+- ["Ps8Hashable", "uniqueCode"]
+- !private ["Ps8Hashable", "updateChildValues"]
 - ["Ps8Hashable", ""]
+- ["SQ", "deinit"]
 - !private ["Ps9Indexable", "Key"]
 - !private ["Ps9Indexable", "Value"]
 - !private ["Ps13IndexableBase", "Key"]
 - !private ["Ps13IndexableBase", "Value"]
 - !private ["Si", "deinit"]
 - !private ["C30SpeechRecognitionServerExample12LatexService", "Alamofire"]
+- !private ["C30SpeechRecognitionServerExample12LatexService", "FIRDatabase"]
+- ["C30SpeechRecognitionServerExample12LatexService", "FIRDatabaseReference"]
 - !private ["C30SpeechRecognitionServerExample12LatexService", "NSDictionary"]
 - ["C30SpeechRecognitionServerExample12LatexService", "String"]
 - ["C30SpeechRecognitionServerExample12LatexService", "UIImageView"]
 - ["C30SpeechRecognitionServerExample12LatexService", "deinit"]
+- ["C30SpeechRecognitionServerExample12LatexService", "enterUniqueCode"]
 - ["C30SpeechRecognitionServerExample12LatexService", "init"]
 - !private ["C30SpeechRecognitionServerExample12LatexService", "print"]
 - ["C30SpeechRecognitionServerExample12LatexService", "requestLatex"]
+- ["C30SpeechRecognitionServerExample12LatexService", "rootRef"]
+- !private ["C30SpeechRecognitionServerExample12LatexService", "uniqueCode"]
 - !private ["Ps25LosslessStringConvertible", "_getBuiltinLogicValue"]
 - !private ["Ps25LosslessStringConvertible", "hasPrefix"]
 - !private ["Ps25LosslessStringConvertible", "init"]
@@ -289,6 +355,8 @@ depends-member:
 - !private ["PSo16NSMutableCopying", "subscript"]
 - !private ["CSo8NSObject", "Alamofire"]
 - !private ["CSo8NSObject", "DispatchQueue"]
+- !private ["CSo8NSObject", "FIRDatabase"]
+- ["CSo8NSObject", "FIRDatabaseReference"]
 - !private ["CSo8NSObject", "HTTPURLResponse"]
 - !private ["CSo8NSObject", "NSDictionary"]
 - ["CSo8NSObject", "String"]
@@ -300,43 +368,58 @@ depends-member:
 - !private ["CSo8NSObject", "URLSession"]
 - !private ["CSo8NSObject", "Void"]
 - !private ["CSo8NSObject", "async"]
+- !private ["CSo8NSObject", "child"]
 - !private ["CSo8NSObject", "contentMode"]
 - !private ["CSo8NSObject", "dataTask"]
+- !private ["CSo8NSObject", "database"]
 - ["CSo8NSObject", "deinit"]
 - ["CSo8NSObject", "downloadedFrom"]
+- ["CSo8NSObject", "enterUniqueCode"]
 - !private ["CSo8NSObject", "hasPrefix"]
 - !private ["CSo8NSObject", "image"]
 - ["CSo8NSObject", "init"]
 - !private ["CSo8NSObject", "main"]
 - !private ["CSo8NSObject", "mimeType"]
 - !private ["CSo8NSObject", "print"]
+- !private ["CSo8NSObject", "reference"]
 - ["CSo8NSObject", "requestLatex"]
 - !private ["CSo8NSObject", "resume"]
+- ["CSo8NSObject", "rootRef"]
 - !private ["CSo8NSObject", "shared"]
 - !private ["CSo8NSObject", "statusCode"]
 - !private ["CSo8NSObject", "subscript"]
+- ["CSo8NSObject", "uniqueCode"]
+- !private ["CSo8NSObject", "updateChildValues"]
 - ["CSo8NSObject", ""]
 - !private ["PSo16NSObjectProtocol", "Alamofire"]
 - !private ["PSo16NSObjectProtocol", "DispatchQueue"]
+- !private ["PSo16NSObjectProtocol", "FIRDatabase"]
 - !private ["PSo16NSObjectProtocol", "UIImage"]
 - !private ["PSo16NSObjectProtocol", "URL"]
 - !private ["PSo16NSObjectProtocol", "URLRequest"]
 - !private ["PSo16NSObjectProtocol", "URLSession"]
 - !private ["PSo16NSObjectProtocol", "async"]
+- !private ["PSo16NSObjectProtocol", "child"]
 - !private ["PSo16NSObjectProtocol", "contentMode"]
 - !private ["PSo16NSObjectProtocol", "dataTask"]
+- !private ["PSo16NSObjectProtocol", "database"]
 - ["PSo16NSObjectProtocol", "downloadedFrom"]
+- ["PSo16NSObjectProtocol", "enterUniqueCode"]
 - !private ["PSo16NSObjectProtocol", "hasPrefix"]
 - !private ["PSo16NSObjectProtocol", "image"]
 - !private ["PSo16NSObjectProtocol", "init"]
 - !private ["PSo16NSObjectProtocol", "main"]
 - !private ["PSo16NSObjectProtocol", "mimeType"]
 - !private ["PSo16NSObjectProtocol", "print"]
+- !private ["PSo16NSObjectProtocol", "reference"]
 - ["PSo16NSObjectProtocol", "requestLatex"]
 - !private ["PSo16NSObjectProtocol", "resume"]
+- ["PSo16NSObjectProtocol", "rootRef"]
 - !private ["PSo16NSObjectProtocol", "shared"]
 - !private ["PSo16NSObjectProtocol", "statusCode"]
 - !private ["PSo16NSObjectProtocol", "subscript"]
+- ["PSo16NSObjectProtocol", "uniqueCode"]
+- !private ["PSo16NSObjectProtocol", "updateChildValues"]
 - ["PSo16NSObjectProtocol", ""]
 - !private ["PSo14NSSecureCoding", "hasPrefix"]
 - !private ["PSo14NSSecureCoding", "init"]
@@ -522,6 +605,7 @@ depends-member:
 - !private ["Ps35_HasCustomAnyHashableRepresentation", "init"]
 - !private ["Ps9_Hashable", "Alamofire"]
 - !private ["Ps9_Hashable", "DispatchQueue"]
+- !private ["Ps9_Hashable", "FIRDatabase"]
 - !private ["Ps9_Hashable", "UIImage"]
 - !private ["Ps9_Hashable", "URL"]
 - !private ["Ps9_Hashable", "URLRequest"]
@@ -529,9 +613,12 @@ depends-member:
 - !private ["Ps9_Hashable", "_getBuiltinLogicValue"]
 - !private ["Ps9_Hashable", "async"]
 - !private ["Ps9_Hashable", "center"]
+- !private ["Ps9_Hashable", "child"]
 - !private ["Ps9_Hashable", "contentMode"]
 - !private ["Ps9_Hashable", "dataTask"]
+- !private ["Ps9_Hashable", "database"]
 - ["Ps9_Hashable", "downloadedFrom"]
+- ["Ps9_Hashable", "enterUniqueCode"]
 - !private ["Ps9_Hashable", "hasPrefix"]
 - !private ["Ps9_Hashable", "image"]
 - !private ["Ps9_Hashable", "init"]
@@ -539,12 +626,16 @@ depends-member:
 - !private ["Ps9_Hashable", "mimeType"]
 - !private ["Ps9_Hashable", "post"]
 - !private ["Ps9_Hashable", "print"]
+- !private ["Ps9_Hashable", "reference"]
 - ["Ps9_Hashable", "requestLatex"]
 - !private ["Ps9_Hashable", "resume"]
+- ["Ps9_Hashable", "rootRef"]
 - !private ["Ps9_Hashable", "scaleAspectFit"]
 - !private ["Ps9_Hashable", "shared"]
 - !private ["Ps9_Hashable", "statusCode"]
 - !private ["Ps9_Hashable", "subscript"]
+- ["Ps9_Hashable", "uniqueCode"]
+- !private ["Ps9_Hashable", "updateChildValues"]
 - ["Ps9_Hashable", ""]
 - !private ["Ps21_ObjectiveCBridgeable", "Key"]
 - !private ["Ps21_ObjectiveCBridgeable", "Value"]
@@ -578,9 +669,13 @@ depends-nominal:
 - !private "Ps32ExpressibleByStringInterpolation"
 - !private "Ps26ExpressibleByStringLiteral"
 - !private "Ps33ExpressibleByUnicodeScalarLiteral"
+- "CSo11FIRDatabase"
+- !private "CSo16FIRDatabaseQuery"
+- "CSo20FIRDatabaseReference"
 - "O9Alamofire10HTTPMethod"
 - !private "CSo15HTTPURLResponse"
 - "Ps8Hashable"
+- "SQ"
 - !private "Ps9Indexable"
 - !private "Ps13IndexableBase"
 - !private "Si"
@@ -647,6 +742,7 @@ depends-external:
 - "/Users/guoxiaoyu/Desktop/AudioToLaTeX/SpeechRecognitionServerExample/SpeechRecognitionServerExample-Bridging-Header.h"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/SwiftOnoneSupport.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Foundation.swiftmodule"
+- "/Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/Firebase/Analytics/Sources/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Darwin.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/Dispatch.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/ObjectiveC.swiftmodule"
@@ -657,4 +753,52 @@ depends-external:
 - "/Users/guoxiaoyu/Desktop/AudioToLaTeX/Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/UIKit.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/armv7/CoreImage.swiftmodule"
-interface-hash: "31a594c300711bf63fb7c7fda3c8dccf"
+- "/Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h"
+- "/Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h"
+- "/Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h"
+- "/Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h"
+- "/Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
+- "/Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
+- "/Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
+- "/Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
+- "/Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRUserInfo.h"
+- "/Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRUser.h"
+- "/Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
+- "/Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
+- "/Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRAuth.h"
+- "/Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
+- "/Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
+- "/Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
+- "/Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
+- "/Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIREmailPasswordAuthProvider.h"
+- "/Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FirebaseAuth.h"
+- "/Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Modules/module.modulemap"
+- "/Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRServerValue.h"
+- "/Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h"
+- "/Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h"
+- "/Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h"
+- "/Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataEventType.h"
+- "/Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h"
+- "/Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h"
+- "/Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabase.h"
+- "/Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FirebaseDatabase.h"
+- "/Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap"
+- "/Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseInstanceID/Frameworks/frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseInstanceID/Frameworks/frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
+- "/Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseInstanceID/Frameworks/frameworks/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageTaskSnapshot.h"
+- "/Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageUploadTask.h"
+- "/Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageReference.h"
+- "/Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageMetadata.h"
+- "/Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageTask.h"
+- "/Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageObservableTask.h"
+- "/Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageDownloadTask.h"
+- "/Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageConstants.h"
+- "/Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorage.h"
+- "/Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FirebaseStorage.h"
+- "/Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Modules/module.modulemap"
+- "/Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/Firebase/Analytics/Sources/Firebase.h"
+interface-hash: "a475a4797795eb8be31fc4694241378e"

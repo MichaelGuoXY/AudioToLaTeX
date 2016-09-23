@@ -116,12 +116,39 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
 #pragma clang diagnostic ignored "-Wduplicate-method-arg"
+@class FIRDatabaseReference;
 @class UIImageView;
 
 SWIFT_CLASS("_TtC30SpeechRecognitionServerExample12LatexService")
 @interface LatexService : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, strong) FIRDatabaseReference * _Null_unspecified rootRef;)
++ (FIRDatabaseReference * _Null_unspecified)rootRef;
++ (void)setRootRef:(FIRDatabaseReference * _Null_unspecified)value;
++ (void)enterUniqueCodeWithCode:(NSString * _Nonnull)code;
 + (void)requestLatexWithPreText:(NSString * _Nonnull)preText imageView:(UIImageView * _Nonnull)imageView;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class UITextField;
+@class UIButton;
+@class UITouch;
+@class UIEvent;
+@class NSBundle;
+@class NSCoder;
+
+SWIFT_CLASS("_TtC30SpeechRecognitionServerExample20SignInViewController")
+@interface SignInViewController : UIViewController
+@property (nonatomic, strong) IBOutlet UITextField * _Null_unspecified uniqueCodeTextField;
+@property (nonatomic, strong) IBOutlet UIButton * _Null_unspecified signInButton;
+@property (nonatomic, strong) FIRDatabaseReference * _Null_unspecified rootRef;
+@property (nonatomic, copy) NSString * _Nonnull uniqueCode;
+- (void)viewDidLoad;
+- (IBAction)signInButtonClicked:(UIButton * _Nonnull)sender;
+- (void)didReceiveMemoryWarning;
+- (void)showAlertWithTitle:(NSString * _Nonnull)title message:(NSString * _Nonnull)message;
+- (void)touchesBegan:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 

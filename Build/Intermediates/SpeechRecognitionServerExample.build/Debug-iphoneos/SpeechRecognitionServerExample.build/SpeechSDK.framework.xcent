@@ -3,14 +3,14 @@
 <plist version="1.0">
 <dict>
 	<key>application-identifier</key>
-	<string>92783P2WFU.com.Microsoft.SpeechRecognitionServerExample</string>
+	<string>92783P2WFU.com.speech2latex.ios</string>
 	<key>com.apple.developer.team-identifier</key>
 	<string>92783P2WFU</string>
 	<key>get-task-allow</key>
 	<true/>
 	<key>keychain-access-groups</key>
 	<array>
-		<string>92783P2WFU.com.Microsoft.SpeechRecognitionServerExample</string>
+		<string>92783P2WFU.com.speech2latex.ios</string>
 	</array>
 </dict>
 </plist>

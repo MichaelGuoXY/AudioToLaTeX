@@ -1,15 +1,73 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES" initialViewController="Pnc-5t-g3K">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Sign In View Controller-->
+        <scene sceneID="FQa-vz-vyl">
+            <objects>
+                <viewController id="Pnc-5t-g3K" customClass="SignInViewController" customModule="SpeechRecognitionServerExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9Zz-65-phr"/>
+                        <viewControllerLayoutGuide type="bottom" id="THr-Lq-jOz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GOB-C5-0KJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Here You Go" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8qG-el-M0F">
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="40"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6gs-3c-sq0">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="7As-ri-xs2"/>
+                                    <constraint firstAttribute="width" constant="70" id="cOD-e6-F6G"/>
+                                </constraints>
+                                <state key="normal" image="recording">
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="StartButton_Click:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YC3-Wj-0zc"/>
+                                    <action selector="signInButtonClicked:" destination="Pnc-5t-g3K" eventType="touchUpInside" id="BVU-HH-MKO"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter The Unique Code on Your Website" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yjh-v0-bV0">
+                                <fontDescription key="fontDescription" name="CourierNewPS-BoldMT" family="Courier New" pointSize="25"/>
+                                <color key="textColor" red="0.54141019570000004" green="0.54141019570000004" blue="0.54141019570000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yjh-v0-bV0" firstAttribute="centerX" secondItem="GOB-C5-0KJ" secondAttribute="centerX" id="0wQ-F7-y0V"/>
+                            <constraint firstItem="6gs-3c-sq0" firstAttribute="centerX" secondItem="GOB-C5-0KJ" secondAttribute="centerX" id="4Ib-KW-5fy"/>
+                            <constraint firstItem="8qG-el-M0F" firstAttribute="leading" secondItem="GOB-C5-0KJ" secondAttribute="leading" constant="35" id="Blm-VH-KzG"/>
+                            <constraint firstItem="8qG-el-M0F" firstAttribute="centerX" secondItem="GOB-C5-0KJ" secondAttribute="centerX" id="FxW-iJ-ukE"/>
+                            <constraint firstItem="yjh-v0-bV0" firstAttribute="leading" secondItem="GOB-C5-0KJ" secondAttribute="leading" constant="20" id="LoY-Qw-B06"/>
+                            <constraint firstItem="6gs-3c-sq0" firstAttribute="top" secondItem="8qG-el-M0F" secondAttribute="bottom" constant="66" id="N5c-lh-YA1"/>
+                            <constraint firstItem="8qG-el-M0F" firstAttribute="top" secondItem="yjh-v0-bV0" secondAttribute="bottom" constant="49" id="dCT-Ft-Y4P"/>
+                            <constraint firstItem="yjh-v0-bV0" firstAttribute="top" secondItem="9Zz-65-phr" secondAttribute="bottom" constant="170" id="gA2-05-goO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="signInButton" destination="6gs-3c-sq0" id="GWV-fK-5QY"/>
+                        <outlet property="uniqueCodeTextField" destination="8qG-el-M0F" id="D90-RC-YbJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="acR-N6-LRt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-424.5" y="273.5"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="speechVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>

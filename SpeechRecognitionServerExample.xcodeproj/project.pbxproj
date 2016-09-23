@@ -16,26 +16,27 @@
 		745A3B4F1ABCBB4700F8191B /* batman.wav in Resources */ = {isa = PBXBuildFile; fileRef = 745A3B4E1ABCBB4700F8191B /* batman.wav */; };
 		745A3B511ABCBB6000F8191B /* whatstheweatherlike.wav in Resources */ = {isa = PBXBuildFile; fileRef = 745A3B501ABCBB6000F8191B /* whatstheweatherlike.wav */; };
 		749D10BE1ABA248D00903F55 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 749D10BC1ABA248D00903F55 /* AVFoundation.framework */; };
-		9CB03EA2F47A09CB2E799E7C /* Pods_SpeechRecognitionServerExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 274496BDCED3B57B134A0D91 /* Pods_SpeechRecognitionServerExample.framework */; };
-		E02FC7051D8EB72A00951A95 /* SpeechSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E02FC7031D8EB72100951A95 /* SpeechSDK.framework */; };
-		E02FC7061D8EB72A00951A95 /* SpeechSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E02FC7031D8EB72100951A95 /* SpeechSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E0836B941D8E70E900C1C337 /* PulsingHalo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0836B921D8E70D500C1C337 /* PulsingHalo.framework */; };
-		E0836B951D8E70E900C1C337 /* PulsingHalo.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E0836B921D8E70D500C1C337 /* PulsingHalo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E0B83C521D8E240E00279BA0 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0B83C511D8E240E00279BA0 /* Alamofire.framework */; };
 		E0B83C541D8E248400279BA0 /* LatexService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B83C531D8E248400279BA0 /* LatexService.swift */; };
+		E0BACEB61D92FC8300C04C38 /* PulsingHalo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0BACEB51D92FC8300C04C38 /* PulsingHalo.framework */; };
+		E0BACEB81D92FC8600C04C38 /* Pods_SpeechRecognitionServerExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0BACEB71D92FC8600C04C38 /* Pods_SpeechRecognitionServerExample.framework */; };
+		E0BACEBA1D92FC8A00C04C38 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0BACEB91D92FC8A00C04C38 /* Alamofire.framework */; };
+		E0BACEC31D92FE2E00C04C38 /* SpeechSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0BACEC21D92FE2E00C04C38 /* SpeechSDK.framework */; };
+		E0BACEC41D92FF4C00C04C38 /* SpeechSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0BACEC21D92FE2E00C04C38 /* SpeechSDK.framework */; };
+		E0BACEC51D92FF4C00C04C38 /* SpeechSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E0BACEC21D92FE2E00C04C38 /* SpeechSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E0BACEC81D93073E00C04C38 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E0BACEC71D93073E00C04C38 /* GoogleService-Info.plist */; };
+		E0FF18301D92F05D004D29D7 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FF182F1D92F05D004D29D7 /* SignInViewController.swift */; };
 		E77379441ACB3E23000521FF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 749D10C01ABA24A700903F55 /* AudioToolbox.framework */; };
 		F9558A361AEBF18200A0A230 /* settings.plist in Resources */ = {isa = PBXBuildFile; fileRef = F9558A351AEBF18200A0A230 /* settings.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		E7A9B7B91ACF2890001FDBEA /* Embed Frameworks */ = {
+		E0BACEC61D92FF4C00C04C38 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 12;
+			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				E0836B951D8E70E900C1C337 /* PulsingHalo.framework in Embed Frameworks */,
-				E02FC7061D8EB72A00951A95 /* SpeechSDK.framework in Embed Frameworks */,
+				E0BACEC51D92FF4C00C04C38 /* SpeechSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -60,12 +61,19 @@
 		749D10BD1ABA248D00903F55 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 		749D10C01ABA24A700903F55 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		A0201B3991C5AFC6CEA8E090 /* Pods-SpeechRecognitionServerExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeechRecognitionServerExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SpeechRecognitionServerExample/Pods-SpeechRecognitionServerExample.debug.xcconfig"; sourceTree = "<group>"; };
-		E02FC7031D8EB72100951A95 /* SpeechSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpeechSDK.framework; path = iPhoneOS/SpeechSDK.framework; sourceTree = "<group>"; };
 		E0836B921D8E70D500C1C337 /* PulsingHalo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PulsingHalo.framework; path = "Build/Products/Debug-iphoneos/PulsingHalo/PulsingHalo.framework"; sourceTree = "<group>"; };
 		E0B83C511D8E240E00279BA0 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "Build/Products/Debug-iphoneos/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
 		E0B83C531D8E248400279BA0 /* LatexService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LatexService.swift; sourceTree = "<group>"; };
 		E0B83C551D8E268200279BA0 /* SpeechRecognitionServerExample-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SpeechRecognitionServerExample-Bridging-Header.h"; sourceTree = "<group>"; };
-		F9558A351AEBF18200A0A230 /* settings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = settings.plist; sourceTree = "<group>"; };
+		E0BACEB51D92FC8300C04C38 /* PulsingHalo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PulsingHalo.framework; path = "Build/Products/Debug-iphonesimulator/PulsingHalo/PulsingHalo.framework"; sourceTree = "<group>"; };
+		E0BACEB71D92FC8600C04C38 /* Pods_SpeechRecognitionServerExample.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_SpeechRecognitionServerExample.framework; path = "Build/Products/Debug-iphonesimulator/Pods_SpeechRecognitionServerExample.framework"; sourceTree = "<group>"; };
+		E0BACEB91D92FC8A00C04C38 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
+		E0BACEBB1D92FC9500C04C38 /* SpeechSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpeechSDK.framework; path = iPhoneOS/SpeechSDK.framework; sourceTree = "<group>"; };
+		E0BACEC21D92FE2E00C04C38 /* SpeechSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpeechSDK.framework; path = Pods/SpeechSDK.framework; sourceTree = "<group>"; };
+		E0BACEC71D93073E00C04C38 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E0FF182F1D92F05D004D29D7 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		E0FF18361D92F906004D29D7 /* SpeechSDK */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = SpeechSDK; path = iPhoneOS/SpeechSDK.framework/SpeechSDK; sourceTree = "<group>"; };
+		F9558A351AEBF18200A0A230 /* settings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = settings.plist; path = ../settings.plist; sourceTree = "<group>"; };
 		FD1F2F48EA36A24468F2C65C /* Pods-SpeechRecognitionServerExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpeechRecognitionServerExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-SpeechRecognitionServerExample/Pods-SpeechRecognitionServerExample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -74,12 +82,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0836B941D8E70E900C1C337 /* PulsingHalo.framework in Frameworks */,
-				E02FC7051D8EB72A00951A95 /* SpeechSDK.framework in Frameworks */,
-				E0B83C521D8E240E00279BA0 /* Alamofire.framework in Frameworks */,
+				E0BACEBA1D92FC8A00C04C38 /* Alamofire.framework in Frameworks */,
+				E0BACEC31D92FE2E00C04C38 /* SpeechSDK.framework in Frameworks */,
+				E0BACEB81D92FC8600C04C38 /* Pods_SpeechRecognitionServerExample.framework in Frameworks */,
+				E0BACEB61D92FC8300C04C38 /* PulsingHalo.framework in Frameworks */,
+				E0BACEC41D92FF4C00C04C38 /* SpeechSDK.framework in Frameworks */,
 				E77379441ACB3E23000521FF /* AudioToolbox.framework in Frameworks */,
 				749D10BE1ABA248D00903F55 /* AVFoundation.framework in Frameworks */,
-				9CB03EA2F47A09CB2E799E7C /* Pods_SpeechRecognitionServerExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +98,11 @@
 		17DFB25CBBF0712194D89229 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E0BACEBB1D92FC9500C04C38 /* SpeechSDK.framework */,
+				E0BACEB91D92FC8A00C04C38 /* Alamofire.framework */,
+				E0BACEB71D92FC8600C04C38 /* Pods_SpeechRecognitionServerExample.framework */,
+				E0BACEB51D92FC8300C04C38 /* PulsingHalo.framework */,
+				E0FF18361D92F906004D29D7 /* SpeechSDK */,
 				749D10C01ABA24A700903F55 /* AudioToolbox.framework */,
 				749D10BC1ABA248D00903F55 /* AVFoundation.framework */,
 				749D10BD1ABA248D00903F55 /* CoreAudio.framework */,
@@ -102,8 +116,7 @@
 		744057DB1AB005E900D4462E = {
 			isa = PBXGroup;
 			children = (
-				E02FC7031D8EB72100951A95 /* SpeechSDK.framework */,
-				F9558A351AEBF18200A0A230 /* settings.plist */,
+				E0BACEC21D92FE2E00C04C38 /* SpeechSDK.framework */,
 				744057E61AB005E900D4462E /* SpeechRecognitionServerExample */,
 				744057E51AB005E900D4462E /* Products */,
 				E33FBFC1FC7E97E6DD4A29AA /* Pods */,
@@ -129,6 +142,7 @@
 				744057EF1AB005E900D4462E /* ViewController.mm */,
 				E0B83C531D8E248400279BA0 /* LatexService.swift */,
 				744057F11AB005E900D4462E /* Main.storyboard */,
+				E0FF182F1D92F05D004D29D7 /* SignInViewController.swift */,
 				744057F41AB005E900D4462E /* Images.xcassets */,
 				744057F61AB005E900D4462E /* LaunchScreen.xib */,
 				744057E71AB005E900D4462E /* Supporting Files */,
@@ -140,8 +154,10 @@
 			isa = PBXGroup;
 			children = (
 				744057E81AB005E900D4462E /* Info.plist */,
+				F9558A351AEBF18200A0A230 /* settings.plist */,
 				744057E91AB005E900D4462E /* main.m */,
 				E0B83C551D8E268200279BA0 /* SpeechRecognitionServerExample-Bridging-Header.h */,
+				E0BACEC71D93073E00C04C38 /* GoogleService-Info.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -176,9 +192,9 @@
 				744057E01AB005E900D4462E /* Sources */,
 				744057E11AB005E900D4462E /* Frameworks */,
 				744057E21AB005E900D4462E /* Resources */,
-				E7A9B7B91ACF2890001FDBEA /* Embed Frameworks */,
 				8B9FCDE92A1C197178C30D0D /* [CP] Embed Pods Frameworks */,
 				357B6A236939639D5EECA491 /* [CP] Copy Pods Resources */,
+				E0BACEC61D92FF4C00C04C38 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -233,6 +249,7 @@
 				745A3B511ABCBB6000F8191B /* whatstheweatherlike.wav in Resources */,
 				744057F81AB005E900D4462E /* LaunchScreen.xib in Resources */,
 				744057F51AB005E900D4462E /* Images.xcassets in Resources */,
+				E0BACEC81D93073E00C04C38 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +311,7 @@
 				E0B83C541D8E248400279BA0 /* LatexService.swift in Sources */,
 				744057F01AB005E900D4462E /* ViewController.mm in Sources */,
 				744057ED1AB005E900D4462E /* AppDelegate.m in Sources */,
+				E0FF18301D92F05D004D29D7 /* SignInViewController.swift in Sources */,
 				744057EA1AB005E900D4462E /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -415,18 +433,25 @@
 				DEVELOPMENT_TEAM = 92783P2WFU;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
 					"../../$PLATFORM_NAME/**",
 					"$(PROJECT_DIR)/Build/Products/Debug-iphoneos/Alamofire",
 					"$(PROJECT_DIR)/Build/Products/Debug-iphoneos/PulsingHalo",
 					"$(PROJECT_DIR)/Pods",
 					"$(PROJECT_DIR)/iPhoneOS",
+					"$(PROJECT_DIR)/Build/Products/Debug-iphonesimulator/PulsingHalo",
+					"$(PROJECT_DIR)/Build/Products/Debug-iphonesimulator",
+					"$(PROJECT_DIR)/Build/Products/Debug-iphonesimulator/Alamofire",
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = SpeechRecognitionServerExample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Microsoft.$(PRODUCT_NAME:rfc1034identifier)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/iPhoneOS/SpeechSDK.framework",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.speech2latex.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "SpeechRecognitionServerExample/SpeechRecognitionServerExample-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -443,18 +468,25 @@
 				DEVELOPMENT_TEAM = 92783P2WFU;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
 					"../../$PLATFORM_NAME/**",
 					"$(PROJECT_DIR)/Build/Products/Debug-iphoneos/Alamofire",
 					"$(PROJECT_DIR)/Build/Products/Debug-iphoneos/PulsingHalo",
 					"$(PROJECT_DIR)/Pods",
 					"$(PROJECT_DIR)/iPhoneOS",
+					"$(PROJECT_DIR)/Build/Products/Debug-iphonesimulator/PulsingHalo",
+					"$(PROJECT_DIR)/Build/Products/Debug-iphonesimulator",
+					"$(PROJECT_DIR)/Build/Products/Debug-iphonesimulator/Alamofire",
 				);
 				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = SpeechRecognitionServerExample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.Microsoft.$(PRODUCT_NAME:rfc1034identifier)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/iPhoneOS/SpeechSDK.framework",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.speech2latex.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "SpeechRecognitionServerExample/SpeechRecognitionServerExample-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;

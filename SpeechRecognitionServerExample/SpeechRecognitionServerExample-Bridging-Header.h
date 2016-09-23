@@ -9,5 +9,6 @@
 #ifndef SpeechRecognitionServerExample_Bridging_Header_h
 #define SpeechRecognitionServerExample_Bridging_Header_h
 
+//#import "ViewController.h"
 
 #endif /* SpeechRecognitionServerExample_Bridging_Header_h */

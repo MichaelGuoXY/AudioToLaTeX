@@ -18,6 +18,7 @@ ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEAL
 **/
 
 #include "precomp.h"
+@import Firebase;
 
 @interface AppDelegate ()
 
@@ -25,8 +26,11 @@ ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEAL
 
 @implementation AppDelegate
 
+
+
 - (BOOL)application:(UNIVERSAL_APPLICATION *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [FIRApp configure];
     return YES;
 }
 

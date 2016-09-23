@@ -1,6 +1,55 @@
 dependencies: \
   /Users/guoxiaoyu/Desktop/AudioToLaTeX/SpeechRecognitionServerExample/main.m \
   /Users/guoxiaoyu/Desktop/AudioToLaTeX/SpeechRecognitionServerExample/precomp.h \
-  /Users/guoxiaoyu/Desktop/AudioToLaTeX/iPhoneOS/SpeechSDK.framework/Headers/SpeechRecognitionService.h \
+  /Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/Firebase/Analytics/Sources/module.modulemap \
+  /Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/SpeechSDK.framework/Headers/SpeechRecognitionService.h \
   /Users/guoxiaoyu/Desktop/AudioToLaTeX/SpeechRecognitionServerExample/AppDelegate.h \
-  /Users/guoxiaoyu/Desktop/AudioToLaTeX/SpeechRecognitionServerExample/ViewController.h
+  /Users/guoxiaoyu/Desktop/AudioToLaTeX/SpeechRecognitionServerExample/ViewController.h \
+  /Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Modules/module.modulemap \
+  /Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIROptions.h \
+  /Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRConfiguration.h \
+  /Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRApp.h \
+  /Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRAnalyticsConfiguration.h \
+  /Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h \
+  /Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h \
+  /Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h \
+  /Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h \
+  /Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h \
+  /Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseAnalytics/Frameworks/frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h \
+  /Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Modules/module.modulemap \
+  /Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRUserInfo.h \
+  /Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRUser.h \
+  /Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRAuthCredential.h \
+  /Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRAuthErrors.h \
+  /Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRAuth.h \
+  /Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h \
+  /Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h \
+  /Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h \
+  /Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h \
+  /Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FIREmailPasswordAuthProvider.h \
+  /Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseAuth/Frameworks/frameworks/FirebaseAuth.framework/Headers/FirebaseAuth.h \
+  /Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Modules/module.modulemap \
+  /Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRServerValue.h \
+  /Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRTransactionResult.h \
+  /Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRMutableData.h \
+  /Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataSnapshot.h \
+  /Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDataEventType.h \
+  /Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseQuery.h \
+  /Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabaseReference.h \
+  /Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FIRDatabase.h \
+  /Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseDatabase/Frameworks/FirebaseDatabase.framework/Headers/FirebaseDatabase.h \
+  /Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseInstanceID/Frameworks/frameworks/FirebaseInstanceID.framework/Modules/module.modulemap \
+  /Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseInstanceID/Frameworks/frameworks/FirebaseInstanceID.framework/Headers/FIRInstanceID.h \
+  /Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseInstanceID/Frameworks/frameworks/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h \
+  /Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Modules/module.modulemap \
+  /Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageTaskSnapshot.h \
+  /Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageUploadTask.h \
+  /Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageReference.h \
+  /Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageMetadata.h \
+  /Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageTask.h \
+  /Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageObservableTask.h \
+  /Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageDownloadTask.h \
+  /Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorageConstants.h \
+  /Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FIRStorage.h \
+  /Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/FirebaseStorage/Frameworks/frameworks/FirebaseStorage.framework/Headers/FirebaseStorage.h \
+  /Users/guoxiaoyu/Desktop/AudioToLaTeX/Pods/Firebase/Analytics/Sources/Firebase.h
